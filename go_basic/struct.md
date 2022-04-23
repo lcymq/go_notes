@@ -251,8 +251,6 @@ var p1 person
 json.Unmarshal([]byte(str), &p1) //函数只能改p1的副本，不能改其本身，所以传引用进去
 ```
 
-# 结构体
-
 ### type声明一种已存在的数据类型的别名
 
 ```go
@@ -270,7 +268,6 @@ var book1 Book
 ```
 
 ### 结构体传递参数
-
 ```go
 func changeBook1(book Book) {
 	// 传递一个book的副本
@@ -294,7 +291,6 @@ func main() {
 ```
 
 输出：
-
 ```
 main.Book, 0xc0000463c0
 book1 = {张三奇遇记 张三}
@@ -305,7 +301,6 @@ book1 = {张三奇遇记 张三}
 ```
 
 想要真正改变book中的值，需要使用指针传递：
-
 ```go
 type Book struct {
 	title string
@@ -342,9 +337,7 @@ func main() {
 
 }
 ```
-
 输出：
-
 ```
 book1 = {张三奇遇记 张三}
 main.Book, 0xc000046440

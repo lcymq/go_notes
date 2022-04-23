@@ -71,3 +71,5 @@
 [sync.Once(sync)](./go_basic/sync.Once.md)
 
 [sync.Map(sync)](./go_basic/sync.Map.md)
+
+[atomic](./go_basic/atomic.md)
