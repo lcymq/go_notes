@@ -74,5 +74,7 @@
 
 [atomic](./go_basic/atomic.md)
 
+[test](./go_basic/test.md)
+
 ### golang高级
 [网络编程](./go_advance/网络编程.md)
